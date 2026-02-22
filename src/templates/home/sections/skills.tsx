@@ -13,7 +13,7 @@ export const Skills = () => {
 
     const renderSkillRow = (title: string, skills: string[]) => (
         <SlideUp className="border-t-2 border-foreground/10 py-10 group hover:bg-muted transition-colors duration-200 ease-out">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center gap-8 px-6 md:px-12 lg:px-24">
+            <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row md:items-center gap-8">
                 <Typography variant="h4" className="w-48 shrink-0 text-foreground/40 group-hover:text-accent uppercase transition-all duration-300 ease-out">
                     {title}
                 </Typography>
@@ -31,8 +31,8 @@ export const Skills = () => {
     );
 
     return (
-        <section id="skills" className="bg-background pt-24 pb-12 w-full scroll-mt-20 md:scroll-mt-24">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 mb-16">
+        <section id="skills" className="bg-background px-4 sm:px-6 md:px-12 md:py-24 pt-24 pb-12 w-full scroll-mt-20 md:scroll-mt-24">
+            <div className="max-w-7xl mx-auto mb-16">
                 <SlideUp>
                     <Typography variant="label" className="mb-4 block">
                         04. {t.skills.title}
