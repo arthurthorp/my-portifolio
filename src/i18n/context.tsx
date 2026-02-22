@@ -27,25 +27,10 @@ type I18nProviderProps = {
 
 export const I18nProvider = ({ children, initialLang = 'pt' }: I18nProviderProps) => {
   const pathname = usePathname();
-  const [lang, setLangState] = useState<Language>(initialLang);
-
-  useEffect(() => {
-    const segment = pathname.split('/').filter(Boolean)[0];
-    if (segment === 'pt' || segment === 'en') {
-      setLangState(segment);
-      localStorage.setItem('language', segment);
-      return;
-    }
-
-    const saved = localStorage.getItem('language') as Language | null;
-    if (saved === 'pt' || saved === 'en') {
-      setLangState(saved);
-    }
-  }, [pathname]);
-
-  useEffect(() => {
-    setLangState(initialLang);
-  }, [initialLang]);
+  const [langState, setLangState] = useState<Language>(initialLang);
+  const routeLang = pathname.split('/').filter(Boolean)[0];
+  const lang: Language =
+    routeLang === 'pt' || routeLang === 'en' ? routeLang : langState;
 
   useEffect(() => {
     document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';

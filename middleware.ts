@@ -11,12 +11,20 @@ export function middleware(request: NextRequest) {
   }
 
   const segment = pathname.split('/').filter(Boolean)[0];
-  const response = NextResponse.next();
+  const requestHeaders = new Headers(request.headers);
+  const locale =
+    segment && locales.includes(segment as (typeof locales)[number])
+      ? segment
+      : 'pt';
 
-  if (segment && locales.includes(segment as (typeof locales)[number])) {
-    response.cookies.set('NEXT_LOCALE', segment, { path: '/', sameSite: 'lax' });
-  }
+  requestHeaders.set('x-locale', locale);
 
+  const response = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
+  response.cookies.set('NEXT_LOCALE', locale, { path: '/', sameSite: 'lax' });
   return response;
 }
 

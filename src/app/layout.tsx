@@ -1,7 +1,7 @@
 import { Layout } from '@/components/layout';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { cookies } from 'next/headers';
+import { headers } from 'next/headers';
 import { ThemeProvider } from '@/components/theme';
 import { I18nProvider } from '@/i18n/context';
 import { cn } from '@/lib/utils';
@@ -46,7 +46,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const locale = (await cookies()).get('NEXT_LOCALE')?.value;
+  const locale = (await headers()).get('x-locale');
   const htmlLang = locale === 'en' ? 'en' : 'pt-BR';
   const initialLang = locale === 'en' ? 'en' : 'pt';
 
