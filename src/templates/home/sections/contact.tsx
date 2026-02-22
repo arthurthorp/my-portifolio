@@ -42,7 +42,6 @@ export const Contact = () => {
     return (
         <Section id="contact" className="bg-accent text-accent-foreground min-h-[70vh] w-full flex flex-col lg:flex-row items-stretch lg:items-center justify-between py-16 md:py-24 lg:py-28 border-none gap-10 md:gap-12 lg:gap-16">
             
-            {/* Left Column: Heading and Links */}
             <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start w-full min-w-0">
                 <SlideUp>
                     <Typography variant="label" className="text-black mb-8 block bg-black/10 px-4 py-2">
@@ -73,7 +72,6 @@ export const Contact = () => {
                 </FadeIn>
             </div>
 
-            {/* Right Column: Form */}
             <div className="flex-1 w-full max-w-xl min-w-0 mx-auto lg:mx-0">
                 <FadeIn delay={0.3}>
                     {isSubmitSuccessful ? (
