@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-import { I18nProvider } from '@/i18n/context';
-
 const locales = ['pt', 'en'] as const;
 type Lang = (typeof locales)[number];
 
@@ -64,5 +62,5 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
     notFound();
   }
 
-  return <I18nProvider initialLang={lang as Lang}>{children}</I18nProvider>;
+  return children;
 }

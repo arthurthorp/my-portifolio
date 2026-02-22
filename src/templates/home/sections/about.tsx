@@ -10,8 +10,7 @@ export const About = () => {
 
     return (
         <Section id="about" className="bg-foreground text-background relative">
-            {/* Brutalist geometric decoration */}
-            <FadeIn delay={0.2} className="absolute top-0 right-0 w-32 h-32 bg-accent" style={{ clipPath: 'polygon(100% 0, 0 0, 100% 100%)' }} />
+            <FadeIn delay={0.2} className="absolute top-0 right-0 w-32 h-32 bg-accent" style={{ clipPath: 'polygon(100% 0, 0 0, 100% 100%)' }} children={undefined} />
 
             <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 md:gap-12 xl:gap-20">
                 <div className="xl:col-span-5">

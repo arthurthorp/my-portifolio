@@ -3,6 +3,7 @@ import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { ThemeProvider } from '@/components/theme';
+import { I18nProvider } from '@/i18n/context';
 import { cn } from '@/lib/utils';
 import { Syne, DM_Sans } from 'next/font/google';
 
@@ -47,6 +48,7 @@ export default async function RootLayout({
 }) {
   const locale = (await cookies()).get('NEXT_LOCALE')?.value;
   const htmlLang = locale === 'en' ? 'en' : 'pt-BR';
+  const initialLang = locale === 'en' ? 'en' : 'pt';
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
@@ -62,7 +64,9 @@ export default async function RootLayout({
           defaultTheme="system"
           enableSystem
         >
-          <Layout>{children}</Layout>
+          <I18nProvider initialLang={initialLang}>
+            <Layout>{children}</Layout>
+          </I18nProvider>
         </ThemeProvider>
       </body>
     </html>
