@@ -31,7 +31,7 @@ export const Skills = () => {
     );
 
     return (
-        <section id="skills" className="bg-background pt-24 pb-12 w-full">
+        <section id="skills" className="bg-background pt-24 pb-12 w-full scroll-mt-20 md:scroll-mt-24">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 mb-16">
                 <SlideUp>
                     <Typography variant="label" className="mb-4 block">
