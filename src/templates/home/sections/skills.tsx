@@ -14,13 +14,13 @@ export const Skills = () => {
     const renderSkillRow = (title: string, skills: string[]) => (
         <SlideUp className="border-t-2 border-foreground/10 py-10 group hover:bg-muted transition-colors duration-200 ease-out">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center gap-8 px-6 md:px-12 lg:px-24">
-                <Typography variant="h3" className="w-48 shrink-0 text-foreground/40 group-hover:text-accent uppercase transition-all duration-300 ease-out">
+                <Typography variant="h4" className="w-48 shrink-0 text-foreground/40 group-hover:text-accent uppercase transition-all duration-300 ease-out">
                     {title}
                 </Typography>
                 <StaggerContainer staggerChildren={0.05} className="flex flex-wrap gap-x-12 gap-y-4">
                     {skills.map((skill, idx) => (
                         <StaggerItem key={idx}>
-                            <Typography variant="h3" className="font-sans font-bold tracking-tight">
+                            <Typography variant="h4" className="font-sans font-bold tracking-tight">
                                 {skill}
                             </Typography>
                         </StaggerItem>

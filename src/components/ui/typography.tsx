@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 const typographyVariants = tv({
     variants: {
         variant: {
-            h1: 'text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-black tracking-tighter uppercase leading-[0.92] break-words',
+            h1: 'text-3xl sm:text-4xl md:text-6xl font-display font-black tracking-tighter uppercase leading-[0.92] break-words',
             h2: 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold tracking-tight uppercase break-words',
             h3: 'text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-bold tracking-tight break-words',
             h4: 'text-xl md:text-2xl font-display font-semibold break-words',
