@@ -8,9 +8,9 @@ const en = {
     lang: 'PT',
   },
   hero: {
-    greeting: 'HELLO, I AM',
+    greeting: 'I’M A',
     role: 'FULL-STACK DEVELOPER',
-    based: 'BASED IN BRAZIL',
+    based: 'HELLO, I’M ARTHUR',
     summary: 'I build high-impact interfaces and robust systems. Focused on scalable architecture and singular experiences.',
   },
   about: {
@@ -63,7 +63,9 @@ const en = {
     formMessagePlaceholder: 'How can I help you?',
     formSubmit: 'SEND MESSAGE',
     formSubmitting: 'SENDING...',
+    formSuccessTitle: 'SUCCESS',
     formSuccess: 'Message sent successfully! I will be in touch soon.',
+    formErrorTitle: 'ERROR',
     formError: 'There was an error sending your message. Please try again later.',
     errors: {
       NAME_MIN: 'Name must have at least 2 characters',

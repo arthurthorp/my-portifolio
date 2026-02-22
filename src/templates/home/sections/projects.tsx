@@ -27,11 +27,10 @@ export const Projects = () => {
                 {t.projects.items.map((project, idx) => (
                     <StaggerItem key={idx} className="group flex flex-col">
                         <div className="relative aspect-video bg-background/5 border-2 border-background/20 mb-8 overflow-hidden flex items-center justify-center group-hover:border-accent transition-colors duration-200 ease-out">
-                            {/* Placeholder for project image */}
                             <Typography variant="h3" className="text-background/10 font-black group-hover:scale-110 group-hover:text-background/20 transition-all duration-500 ease-out">
                                 {project.name}
                             </Typography>
-                            {/* Hover overlay */}
+                            
                             <div className="absolute inset-0 bg-accent/90 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center p-8">
                                 <Button variant="secondary" className="mb-4">
                                     {t.projects.viewProject}

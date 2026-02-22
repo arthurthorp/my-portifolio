@@ -79,7 +79,7 @@ export const Contact = () => {
                     {isSubmitSuccessful ? (
                         <div className="bg-background text-foreground p-6 sm:p-8 md:p-12 border-4 border-black text-center shadow-[12px_12px_0_0_rgba(0,0,0,1)] md:shadow-[16px_16px_0_0_rgba(0,0,0,1)]">
                             <Typography variant="h2" className="mb-4 text-accent">
-                                ✔ SUCCESS
+                                ✔ {t.contact.formSuccessTitle}
                             </Typography>
                             <Typography variant="body" className="font-bold text-xl">
                                 {t.contact.formSuccess}

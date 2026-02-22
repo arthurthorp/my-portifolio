@@ -8,9 +8,9 @@ const pt = {
     lang: 'EN',
   },
   hero: {
-    greeting: 'OLÁ, EU SOU',
-    role: 'DESENVOLVEDOR FULL-STACK',
-    based: 'BASEADO NO BRASIL',
+    greeting: 'SOU DEV',
+    role: 'FULL-STACK',
+    based: 'OLÁ, ME CHAMO ARTHUR',
     summary: 'Construo interfaces de alto impacto e sistemas robustos. Foco em arquitetura escalável e experiências singulares.',
   },
   about: {
@@ -63,7 +63,9 @@ const pt = {
     formMessagePlaceholder: 'Como posso ajudar?',
     formSubmit: 'ENVIAR MENSAGEM',
     formSubmitting: 'ENVIANDO...',
+    formSuccessTitle: 'SUCESSO',
     formSuccess: 'Mensagem enviada com sucesso! Entrarei em contato em breve.',
+    formErrorTitle: 'ERRO',
     formError: 'Houve um erro ao enviar sua mensagem. Tente novamente mais tarde.',
     errors: {
       NAME_MIN: 'O nome deve ter pelo menos 2 caracteres',
