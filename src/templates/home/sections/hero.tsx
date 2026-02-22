@@ -69,14 +69,14 @@ export const Hero = () => {
                 </div>
 
                 <FadeIn delay={0.35} className="w-full max-w-[320px] sm:max-w-[360px] lg:max-w-none mx-auto">
-                    <div className="relative aspect-3/4 w-full overflow-hidden border-2 border-foreground bg-muted shadow-[10px_10px_0_0_rgba(0,0,0,0.2)] dark:shadow-[10px_10px_0_0_rgba(249,115,22,0.25)]">
+                    <div className="relative aspect-4/5 w-full overflow-hidden border-2 border-foreground bg-muted shadow-[10px_10px_0_0_rgba(249,115,22,0.8)] dark:shadow-[10px_10px_0_0_rgba(249,115,22,0.25)]">
                         <Image
-                            src="/arthur-talk-portrait.svg"
+                            src="/profile_image.webp"
                             alt="Arthur presenting a software engineering lecture on stage"
                             fill
                             priority
-                            sizes="(max-width: 768px) 80vw, (max-width: 1024px) 45vw, 360px"
-                            className="object-cover"
+                            quality={100}
+                            sizes="(max-width: 768px) 80vw, 360px"
                         />
                     </div>
                 </FadeIn>
