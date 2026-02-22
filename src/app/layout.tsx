@@ -1,27 +1,27 @@
 import { Layout } from '@/components/layout';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { ThemeProvider } from '@/components/theme'
+import { ThemeProvider } from '@/components/theme';
+import { I18nProvider } from '@/i18n/context';
+import { Syne, DM_Sans } from 'next/font/google';
+
+const fontDisplay = Syne({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['400', '600', '700', '800'],
+  display: 'swap',
+});
+
+const fontSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Arthur Tavares | Full Stack Developer',
-  description: 'Venda seus produtos como afiliado em um único lugar',
-  openGraph: {
-    title: 'Site.Set',
-    description: 'Venda seus produtos como afiliado em um único lugar',
-    url: 'https://nextjs-fundamentos.vercel.app/og-image.jpg',
-    siteName: 'Site.Set',
-    locale: 'pt-BR',
-    type: 'website',
-    images: [
-      {
-        url: 'https://nextjs-fundamentos.vercel.app/og-image.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Site.Set',
-      },
-    ],
-  },
+  description: 'Portfolio of Arthur Tavares, a full-stack developer focusing on scalable architecture and singular experiences.',
 };
 
 export default function RootLayout({
@@ -31,14 +31,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={`${fontSans.variable} ${fontDisplay.variable} font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-black`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
-          <Layout>{children}</Layout>
+          <I18nProvider>
+            <Layout>{children}</Layout>
+          </I18nProvider>
         </ThemeProvider>
       </body>
     </html>
