@@ -4,6 +4,7 @@ import { useTranslation } from '@/i18n/context';
 import { Section } from '@/components/ui/section';
 import { Typography } from '@/components/ui/typography';
 import { Button } from '@/components/ui/button';
+import { Text } from '@/components/ui/text';
 import { SlideUp, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 
 export const Projects = () => {
@@ -25,9 +26,9 @@ export const Projects = () => {
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
                 {t.projects.items.map((project, idx) => (
                     <StaggerItem key={idx} className="group flex flex-col">
-                        <div className="relative aspect-video bg-background/5 border-2 border-background/20 mb-8 overflow-hidden flex items-center justify-center group-hover:border-accent">
+                        <div className="relative aspect-video bg-background/5 border-2 border-background/20 mb-8 overflow-hidden flex items-center justify-center group-hover:border-accent transition-colors duration-200 ease-out">
                             {/* Placeholder for project image */}
-                            <Typography variant="h3" className="text-background/10 font-black group-hover:scale-110 transition-transform duration-500">
+                            <Typography variant="h3" className="text-background/10 font-black group-hover:scale-110 group-hover:text-background/20 transition-all duration-500 ease-out">
                                 {project.name}
                             </Typography>
                             {/* Hover overlay */}
@@ -48,9 +49,13 @@ export const Projects = () => {
 
                             <div className="flex flex-wrap gap-2 mt-auto pt-6">
                                 {project.tech.map((tech, tIdx) => (
-                                    <span key={tIdx} className="px-3 py-1 border border-background/30 text-xs font-sans font-medium uppercase tracking-widest text-background/90">
+                                    <Text
+                                        key={tIdx}
+                                        variant="badge"
+                                        className="border-background/30 text-background/90"
+                                    >
                                         {tech}
-                                    </span>
+                                    </Text>
                                 ))}
                             </div>
                         </div>

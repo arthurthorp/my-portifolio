@@ -1,8 +1,9 @@
 import { Layout } from '@/components/layout';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
+import { cookies } from 'next/headers';
 import { ThemeProvider } from '@/components/theme';
-import { I18nProvider } from '@/i18n/context';
+import { cn } from '@/lib/utils';
 import { Syne, DM_Sans } from 'next/font/google';
 
 const fontDisplay = Syne({
@@ -20,26 +21,48 @@ const fontSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'Arthur Tavares | Full Stack Developer',
-  description: 'Portfolio of Arthur Tavares, a full-stack developer focusing on scalable architecture and singular experiences.',
+  description:
+    'Portfolio of Arthur Tavares, a full-stack developer focused on scalable architecture and high-quality digital products.',
+  openGraph: {
+    title: 'Arthur Tavares | Full Stack Developer',
+    description:
+      'Portfolio of Arthur Tavares, a full-stack developer focused on scalable architecture and high-quality digital products.',
+    type: 'website',
+    url: '/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Arthur Tavares | Full Stack Developer',
+    description:
+      'Portfolio of Arthur Tavares, a full-stack developer focused on scalable architecture and high-quality digital products.',
+  },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const locale = (await cookies()).get('NEXT_LOCALE')?.value;
+  const htmlLang = locale === 'en' ? 'en' : 'pt-BR';
+
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${fontSans.variable} ${fontDisplay.variable} font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-black`}>
+    <html lang={htmlLang} suppressHydrationWarning>
+      <body
+        className={cn(
+          fontSans.variable,
+          fontDisplay.variable,
+          'font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-black',
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
         >
-          <I18nProvider>
-            <Layout>{children}</Layout>
-          </I18nProvider>
+          <Layout>{children}</Layout>
         </ThemeProvider>
       </body>
     </html>

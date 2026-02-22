@@ -1,6 +1,7 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import pt from './dictionaries/pt';
 import en from './dictionaries/en';
 
@@ -19,25 +20,46 @@ const I18nContext = createContext<I18nContextProps>({
   setLang: () => {},
 });
 
-export const I18nProvider = ({ children }: { children: React.ReactNode }) => {
-  const [lang, setLangState] = useState<Language>('pt');
+type I18nProviderProps = {
+  children: React.ReactNode;
+  initialLang?: Language;
+};
+
+export const I18nProvider = ({ children, initialLang = 'pt' }: I18nProviderProps) => {
+  const pathname = usePathname();
+  const [lang, setLangState] = useState<Language>(initialLang);
 
   useEffect(() => {
-    const saved = localStorage.getItem('language') as Language;
-    if (saved && (saved === 'pt' || saved === 'en')) {
-      setLangState(saved);
-    } else {
-      const browserLang = navigator.language.startsWith('pt') ? 'pt' : 'en';
-      setLangState(browserLang);
+    const segment = pathname.split('/').filter(Boolean)[0];
+    if (segment === 'pt' || segment === 'en') {
+      setLangState(segment);
+      localStorage.setItem('language', segment);
+      return;
     }
-  }, []);
+
+    const saved = localStorage.getItem('language') as Language | null;
+    if (saved === 'pt' || saved === 'en') {
+      setLangState(saved);
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    setLangState(initialLang);
+  }, [initialLang]);
+
+  useEffect(() => {
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+  }, [lang]);
+
+  useEffect(() => {
+    localStorage.setItem('language', lang);
+  }, [lang]);
 
   const setLang = (newLang: Language) => {
     setLangState(newLang);
-    localStorage.setItem('language', newLang);
   };
 
-  const t = lang === 'pt' ? pt : en;
+  const t = useMemo(() => (lang === 'pt' ? pt : en), [lang]);
 
   return (
     <I18nContext.Provider value={{ lang, t, setLang }}>

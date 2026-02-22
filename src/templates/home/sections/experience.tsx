@@ -23,10 +23,10 @@ export const Experience = () => {
                 {t.experience.items.map((item, idx) => (
                     <StaggerItem key={idx} className="relative group">
                         {/* Timeline node */}
-                        <div className="absolute -left-[42px] md:-left-[58px] top-2 w-5 h-5 bg-background border-4 border-accent rounded-full group-hover:bg-accent"></div>
+                        <div className="absolute -left-[42px] md:-left-[58px] top-2 w-5 h-5 bg-background border-4 border-accent rounded-full group-hover:bg-accent transition-colors duration-200 ease-out"></div>
                         
                         <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-4 gap-2">
-                            <Typography variant="h3" className="group-hover:text-accent">
+                            <Typography variant="h3" className="group-hover:text-accent group-hover:translate-x-1 transition-all duration-200 ease-out inline-block">
                                 {item.role}
                             </Typography>
                             <Typography variant="label" className="text-foreground/60 font-bold border-2 border-foreground/10 px-3 py-1 inline-block bg-muted self-start">

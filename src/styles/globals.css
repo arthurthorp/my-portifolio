@@ -66,9 +66,14 @@
 }
 
 @layer base {
+  html, body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
   *, ::before, ::after {
     @apply border-border;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-property: background-color;
     transition-timing-function: var(--theme-transition-ease);
     transition-duration: var(--theme-transition-duration);
   }

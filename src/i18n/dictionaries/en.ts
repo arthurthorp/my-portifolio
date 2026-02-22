@@ -50,11 +50,28 @@ const en = {
   },
   contact: {
     title: 'CONTACT',
-    subtitle: 'LET\'S WORK TOGETHER',
+    subtitle: 'GET IN TOUCH',
     email: 'hello@arthur.dev',
     github: 'GITHUB',
     linkedin: 'LINKEDIN',
     cta: 'START PROJECT',
+    formName: 'NAME',
+    formNamePlaceholder: 'Your name',
+    formEmail: 'EMAIL',
+    formEmailPlaceholder: 'your.email@example.com',
+    formMessage: 'MESSAGE',
+    formMessagePlaceholder: 'How can I help you?',
+    formSubmit: 'SEND MESSAGE',
+    formSubmitting: 'SENDING...',
+    formSuccess: 'Message sent successfully! I will be in touch soon.',
+    formError: 'There was an error sending your message. Please try again later.',
+    errors: {
+      NAME_MIN: 'Name must have at least 2 characters',
+      NAME_MAX: 'Name must have less than 100 characters',
+      EMAIL_INVALID: 'Please enter a valid email',
+      MESSAGE_MIN: 'Message must have at least 10 characters',
+      MESSAGE_MAX: 'Message must have less than 1000 characters'
+    }
   },
   footer: {
     copy: '© 2026 ARTHUR TAVARES. ALL RIGHTS RESERVED.',

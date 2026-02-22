@@ -1,32 +1,40 @@
 import * as React from 'react';
+import { tv, type VariantProps } from 'tailwind-variants';
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-    size?: 'sm' | 'md' | 'lg' | 'icon';
-};
+import { cn } from '@/lib/utils';
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-    ({ className = '', variant = 'primary', size = 'md', ...props }, ref) => {
-        const baseStyles = 'inline-flex items-center justify-center font-display font-bold tracking-wider uppercase transition-transform duration-150 disabled:opacity-50 disabled:pointer-events-none active:scale-95';
-        
-        const variants = {
-            primary: 'bg-accent text-accent-foreground hover:bg-foreground hover:text-background border-2 border-transparent hover:border-foreground',
-            secondary: 'bg-foreground text-background hover:bg-background hover:text-foreground border-2 border-foreground',
-            outline: 'bg-transparent text-foreground border-2 border-foreground hover:bg-foreground hover:text-background',
-            ghost: 'bg-transparent text-foreground hover:text-accent hover:underline decoration-2 underline-offset-4',
-        };
-
-        const sizes = {
+const buttonVariants = tv({
+    base: 'inline-flex items-center justify-center border-2 font-display font-bold tracking-wider uppercase transition-all duration-200 ease-out cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 disabled:pointer-events-none active:translate-y-0 active:scale-[0.98]',
+    variants: {
+        variant: {
+            primary: 'bg-accent text-accent-foreground border-transparent hover:-translate-y-[2px] hover:shadow-md hover:bg-foreground hover:text-background hover:border-foreground hover:shadow-foreground/20',
+            secondary: 'bg-foreground text-background border-foreground hover:-translate-y-[2px] hover:shadow-md hover:bg-background hover:text-foreground hover:shadow-foreground/20',
+            outline: 'bg-transparent text-foreground border-foreground hover:-translate-y-[2px] hover:shadow-md hover:bg-foreground hover:text-background hover:shadow-foreground/20',
+            ghost: 'bg-transparent text-foreground border-transparent hover:bg-accent/10 hover:text-accent hover:shadow-none hover:translate-y-0',
+            control: 'bg-transparent text-foreground border-foreground font-sans font-bold tracking-normal normal-case hover:bg-foreground hover:text-background hover:-translate-y-[2px] hover:shadow-md hover:shadow-foreground/20',
+        },
+        size: {
             sm: 'h-10 px-4 text-xs',
             md: 'h-14 px-8 text-sm',
             lg: 'h-16 px-10 text-base',
-            icon: 'h-12 w-12',
-        };
+            icon: 'h-10 w-10 p-0 text-sm',
+        },
+    },
+    defaultVariants: {
+        variant: 'primary',
+        size: 'md',
+    },
+});
 
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+    VariantProps<typeof buttonVariants>;
+
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+    ({ className, variant, size, ...props }, ref) => {
         return (
             <button
                 ref={ref}
-                className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+                className={cn(buttonVariants({ variant, size }), className)}
                 {...props}
             />
         );
