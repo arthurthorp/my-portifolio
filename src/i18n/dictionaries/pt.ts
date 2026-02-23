@@ -71,6 +71,24 @@ const pt = {
         slug: 'decathlon',
         description: 'Hub de Integração e Sincronização de Dados em Tempo Real',
         tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microserviços']
+      },
+      {
+        name: 'Samsung',
+        slug: 'samsung',
+        description: 'Plataforma de Resgate de Cupons e Sincronização de Usuários',
+        tech: ['Full-Stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
+      },
+      {
+        name: 'Carrefour',
+        slug: 'carrefour',
+        description: 'Plataforma de Autonomia de Pedidos e Backoffice',
+        tech: ['Full-Stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
+      },
+      {
+        name: 'IX',
+        slug: 'ix',
+        description: 'Plataforma SaaS Interna para Gerenciamento de Trabalhadores Terceirizados em Clínicas',
+        tech: ['Full-Stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Automação de E-mails', 'Dashboard Administrativo', 'RBAC']
       }
     ]
   },
