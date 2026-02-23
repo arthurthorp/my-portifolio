@@ -84,7 +84,7 @@ export const Contact = () => {
                             </Typography>
                         </div>
                     ) : (
-                        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 bg-black/5 p-5 sm:p-6 md:p-10 border-4 border-black  md:shadow-[16px_16px_0_0_rgba(0,0,0,1)] md:hover:shadow-[8px_8px_0_0_rgba(0,0,0,1)] md:hover:translate-x-2 md:hover:translate-y-2 transition-all duration-300 ease-out">
+                        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 bg-white p-5 sm:p-6 md:p-10 border-4 border-black  md:shadow-[16px_16px_0_0_rgba(0,0,0,1)] md:hover:shadow-[8px_8px_0_0_rgba(0,0,0,1)] md:hover:translate-x-2 md:hover:translate-y-2 transition-all duration-300 ease-out">
                             
                             {serverError && (
                                 <div className="bg-black text-background p-4 font-bold text-sm">

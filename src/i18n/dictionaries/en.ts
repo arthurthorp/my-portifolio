@@ -32,15 +32,13 @@ const en = {
   projects: {
     title: 'CHALLENGING PROJECTS',
     viewProject: 'VIEW DETAILS',
-    sourceCode: 'SOURCE CODE',
     backToList: 'Back to projects',
     items: [
       {
         name: 'Decathlon',
         slug: 'decathlon',
         description: 'Real-Time Data Integration and Synchronization Hub',
-        tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microservices'],
-        link: '#',
+        tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microservices']
       }
     ]
   },
@@ -78,7 +76,7 @@ const en = {
     }
   },
   footer: {
-    copy: '© 2026 ARTHUR TAVARES. ALL RIGHTS RESERVED.',
+    copy: '© 2026 ARTHUR Cardoso. ALL RIGHTS RESERVED.',
   }
 };
 

@@ -31,16 +31,14 @@ const pt = {
   },
   projects: {
     title: 'PROJETOS DESAFIADORES',
-    viewProject: 'VER PROJETOS',
-    sourceCode: 'CÓDIGO FONTE',
+    viewProject: 'VER DETALHES',
     backToList: 'Voltar aos projetos',
     items: [
       {
         name: 'Decathlon',
         slug: 'decathlon',
         description: 'Hub de Integração e Sincronização de Dados em Tempo Real',
-        tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microserviços'],
-        link: '#',
+        tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microserviços']
       }
     ]
   },
@@ -78,7 +76,7 @@ const pt = {
     }
   },
   footer: {
-    copy: '© 2026 ARTHUR TAVARES. TODOS OS DIREITOS RESERVADOS.',
+    copy: 'ARTHUR CARDOSO. TODOS OS DIREITOS RESERVADOS.',
   }
 };
 

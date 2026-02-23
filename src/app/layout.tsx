@@ -23,21 +23,21 @@ const fontSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'Arthur Tavares | Full Stack Developer',
+  title: 'Arthur Cardoso | Full Stack Developer',
   description:
-    'Portfolio of Arthur Tavares, a full-stack developer focused on scalable architecture and high-quality digital products.',
+    'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
   openGraph: {
-    title: 'Arthur Tavares | Full Stack Developer',
+    title: 'Arthur Cardoso | Full Stack Developer',
     description:
-      'Portfolio of Arthur Tavares, a full-stack developer focused on scalable architecture and high-quality digital products.',
+      'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
     type: 'website',
     url: '/',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arthur Tavares | Full Stack Developer',
+    title: 'Arthur Cardoso | Full Stack Developer',
     description:
-      'Portfolio of Arthur Tavares, a full-stack developer focused on scalable architecture and high-quality digital products.',
+      'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
   },
 };
 
