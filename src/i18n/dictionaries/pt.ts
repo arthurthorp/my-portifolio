@@ -30,14 +30,16 @@ const pt = {
     ]
   },
   projects: {
-    title: 'PROJETOS',
-    viewProject: 'VER PROJETO',
+    title: 'PROJETOS DESAFIADORES',
+    viewProject: 'VER PROJETOS',
     sourceCode: 'CÓDIGO FONTE',
+    backToList: 'Voltar aos projetos',
     items: [
       {
-        name: 'Site.Set',
-        description: 'Plataforma para afiliados venderem produtos em um único lugar.',
-        tech: ['Next.js', 'React', 'Tailwind CSS'],
+        name: 'Decathlon',
+        slug: 'decathlon',
+        description: 'Hub de Integração e Sincronização de Dados em Tempo Real',
+        tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microserviços'],
         link: '#',
       }
     ]
@@ -54,7 +56,7 @@ const pt = {
     email: 'hello@arthur.dev',
     github: 'GITHUB',
     linkedin: 'LINKEDIN',
-    cta: 'INICIAR PROJETO',
+    cta: 'ENTRAR EM CONTATO',
     formName: 'NOME',
     formNamePlaceholder: 'Seu nome',
     formEmail: 'EMAIL',

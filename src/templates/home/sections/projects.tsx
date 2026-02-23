@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useTranslation } from '@/i18n/context';
 import { Section } from '@/components/ui/section';
 import { Typography } from '@/components/ui/typography';
@@ -8,7 +9,7 @@ import { Text } from '@/components/ui/text';
 import { SlideUp, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 
 export const Projects = () => {
-    const { t } = useTranslation();
+    const { t, lang } = useTranslation();
 
     return (
         <Section id="projects" className="bg-foreground text-background">
@@ -26,17 +27,7 @@ export const Projects = () => {
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
                 {t.projects.items.map((project, idx) => (
                     <StaggerItem key={idx} className="group flex flex-col">
-                        <div className="relative aspect-video bg-background/5 border-2 border-background/20 mb-8 overflow-hidden flex items-center justify-center group-hover:border-accent transition-colors duration-200 ease-out">
-                            <Typography variant="h3" className="text-background/10 font-black group-hover:scale-110 group-hover:text-background/20 transition-all duration-500 ease-out">
-                                {project.name}
-                            </Typography>
-                            
-                            <div className="absolute inset-0 bg-accent/90 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center p-8">
-                                <Button variant="secondary" className="mb-4">
-                                    {t.projects.viewProject}
-                                </Button>
-                            </div>
-                        </div>
+                        
 
                         <div className="flex flex-col gap-4 flex-1">
                             <Typography variant="h3" className="text-background uppercase tracking-tight">
@@ -45,6 +36,8 @@ export const Projects = () => {
                             <Typography variant="body" className="text-background/70">
                                 {project.description}
                             </Typography>
+
+                            
 
                             <div className="flex flex-wrap gap-2 mt-auto pt-6">
                                 {project.tech.map((tech, tIdx) => (
@@ -57,6 +50,15 @@ export const Projects = () => {
                                     </Text>
                                 ))}
                             </div>
+
+                            <Link
+                                href={`/${lang}/projects/${(project as { slug?: string }).slug ?? project.name.toLowerCase().replace(/\s+/g, '-')}`}
+                                className="w-fit font-sans text-sm font-bold uppercase tracking-widest text-accent relative group transition-colors duration-200 ease-out"
+                            >
+                                {t.projects.viewProject}
+
+                                <Text className="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent transition-[width] duration-300 group-hover:w-full" />
+                            </Link>
                         </div>
                     </StaggerItem>
                 ))}

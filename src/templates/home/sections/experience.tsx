@@ -22,7 +22,6 @@ export const Experience = () => {
             <StaggerContainer className="flex flex-col gap-12 border-l-2 border-foreground/10 ml-4 md:ml-0 md:pl-12 pl-8">
                 {t.experience.items.map((item, idx) => (
                     <StaggerItem key={idx} className="relative group">
-                        {/* Timeline node */}
                         <div className="absolute -left-[42px] md:-left-[58px] top-2 w-5 h-5 bg-background border-4 border-accent rounded-full group-hover:bg-accent transition-colors duration-200 ease-out"></div>
                         
                         <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-4 gap-2">
