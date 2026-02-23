@@ -26,18 +26,15 @@ export const metadata: Metadata = {
   title: 'Arthur Cardoso | Full Stack Developer',
   description:
     'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
+  icons: {
+    icon: '/icon.svg',
+  },
   openGraph: {
     title: 'Arthur Cardoso | Full Stack Developer',
     description:
       'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
     type: 'website',
     url: '/',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Arthur Cardoso | Full Stack Developer',
-    description:
-      'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
   },
 };
 
