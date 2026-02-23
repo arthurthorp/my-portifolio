@@ -4,7 +4,7 @@
 
 Projeto de **plataforma de sincronização e integração de dados em tempo real**, baseada em **Arquitetura Orientada a Eventos (Event-Driven Architecture)** e **microsserviços na AWS**, com foco em **alta disponibilidade, escalabilidade e consistência eventual**.
 
-A solução foi desenvolvida para consumir grandes volumes de dados provenientes de um **ERP legado (SAP)**, processar eventos em alta escala e distribuir dados consolidados de forma resiliente para múltiplos domínios corporativos.
+A solução foi desenvolvida para consumir grandes volumes de dados provenientes de um **ERP (SAP)**, processar eventos em alta escala e distribuir dados consolidados de forma resiliente para múltiplos domínios corporativos.
 
 **Palavras-chave estratégicas:** integração de dados corporativos, sincronização em tempo real, arquitetura orientada a eventos, microsserviços AWS, Apache Kafka, AWS Lambda, DynamoDB, processamento assíncrono, alta disponibilidade, sistemas distribuídos.
 
@@ -23,7 +23,7 @@ A arquitetura foi desenhada seguindo princípios de **microsserviços desacoplad
 
 ### Tecnologias e Serviços Utilizados
 
-- **Apache Kafka** para ingestão e streaming de eventos do ecossistema SAP.
+- **Apache Kafka** para ingestão eventos de terceiros.
 - **Amazon SQS (Simple Queue Service)** para filas desacopladas e controle de fluxo.
 - **Amazon SNS (Simple Notification Service)** para roteamento seguro e publicação de mensagens.
 - **Dead Letter Queues (DLQ)** para tratamento estruturado de falhas.
