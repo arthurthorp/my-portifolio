@@ -63,8 +63,8 @@ export const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 z-50 w-full border-b-2 border-foreground bg-background">
-            <div className="mx-auto flex h-16 items-center justify-between px-4 sm:px-6 md:h-20 md:px-12 lg:px-24">
+        <header className="fixed top-0 z-50 w-full border-b-2 border-foreground px-4 sm:px-6 md:px-12 lg:px-24 bg-background">
+            <div className="mx-auto w-full max-w-7xl flex h-16 items-center justify-between md:h-20 ">
                 
                 <div className="flex shrink-0">
                     <Link href={`/${lang}`} className="font-display text-lg font-black uppercase tracking-tight hover:text-accent transition-colors duration-200 ease-out sm:text-xl md:text-2xl">
@@ -87,7 +87,6 @@ export const Header = () => {
                     ))}
                 </nav>
 
-                {/* Controls */}
                 <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
                     <Button
                         type="button"
