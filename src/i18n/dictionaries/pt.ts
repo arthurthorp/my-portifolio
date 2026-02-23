@@ -18,7 +18,7 @@ const pt = {
   about: {
     title: 'SOBRE',
     description1: 'Sou desenvolvedor full-stack e gosto de transformar desafios complexos em soluções claras, eficientes e bem estruturadas. Uno uma base técnica sólida a uma atenção cuidadosa ao design e à experiência do usuário, buscando sempre entregar produtos que funcionem bem e façam sentido para quem os utiliza.',
-    description2: 'Trabalho em toda a stack, desde a otimização de consultas de banco de dados até a criação de animações fluidas no frontend, sempre garantindo performance e acessibilidade.',
+    description2: 'Trabalho em toda a stack, desde a otimização de consultas de banco de dados até a criação de animações fluidas no front-end, sempre garantindo performance e acessibilidade.',
   },
   experience: {
     title: 'EXPERIÊNCIA',
@@ -33,13 +33,13 @@ const pt = {
         role: 'Desenvolvedor Full-Stack Pleno III',
         company: 'Adtail',
         period: '2024 - 2025',
-        description: 'Desenvolvimento e evolução de e-commerces em VTEX IO, CMS e FastStore, criando componentes customizados, apps para o Admin e integrações backend em Node.js. Atuação em arquitetura de lojas, configuração de MasterData, implantação de checkout e serviços em Cloud. Participação ativa em reuniões com clientes para definição de escopo e suporte técnico, trabalhando em ambiente ágil com SCRUM e Git Flow.',
+        description: 'Desenvolvimento e evolução de e-commerces em VTEX IO, CMS e FastStore, criando componentes customizados, apps para o Admin e integrações back-end em Node.js. Atuação em arquitetura de lojas, configuração de MasterData, implantação de checkout e serviços em Cloud. Participação ativa em reuniões com clientes para definição de escopo e suporte técnico, trabalhando em ambiente ágil com SCRUM e Git Flow.',
       },
       {
         role: 'Desenvolvedor Full-Stack Pleno II',
         company: 'Cadastra',
         period: '2022 - 2024',
-        description: 'Implementação e evolução de grandes e-commerces utilizando VTEX IO, CMS e FastStore, atuando em projetos relevantes como Carrefour, Samsung e Perfect Draft (Ambev). Desenvolvimento de componentes customizados, integração com serviços backend em Node.js e configuração de MasterData. Forte atuação em performance, experiência do usuário e arquitetura front-end escalável dentro de squads ágeis.',
+        description: 'Implementação e evolução de grandes e-commerces utilizando VTEX IO, CMS e FastStore, atuando em projetos relevantes como Carrefour, Samsung e Perfect Draft (Ambev). Desenvolvimento de componentes customizados, integração com serviços back-end em Node.js e configuração de MasterData. Forte atuação em performance, experiência do usuário e arquitetura front-end escalável dentro de squads ágeis.',
       },
       {
         role: 'Desenvolvedor Web Júnior',
@@ -51,7 +51,7 @@ const pt = {
         role: 'Desenvolvedor Web',
         company: 'DTO',
         period: '2020 - 2021',
-        description: 'Desenvolvimento de plataformas institucionais e sistemas administrativos utilizando Laravel (PHP), com modelagem e otimização de consultas em banco de dados. Implementação de arquiteturas backend estruturadas, manutenção de servidores via FTP e versionamento com Git. Forte base em estruturação de aplicações web e organização de código.',
+        description: 'Desenvolvimento de plataformas institucionais e sistemas administrativos utilizando Laravel (PHP), com modelagem e otimização de consultas em banco de dados. Implementação de arquiteturas back-end estruturadas, manutenção de servidores via FTP e versionamento com Git. Forte base em estruturação de aplicações web e organização de código.',
       },
       {
         role: 'Desenvolvedor Web Estagiário',
@@ -70,25 +70,25 @@ const pt = {
         name: 'Decathlon',
         slug: 'decathlon',
         description: 'Hub de Integração e Sincronização de Dados em Tempo Real',
-        tech: [ 'Backend', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microserviços']
+        tech: [ 'Back-end', 'Lambda' , 'Node.js', 'Kafka','DynamoDB', 'AWS', 'CronJobs', 'Microserviços']
       },
       {
         name: 'Samsung',
         slug: 'samsung',
         description: 'Plataforma de Resgate de Cupons e Sincronização de Usuários',
-        tech: ['Full-Stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
+        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
       },
       {
         name: 'Carrefour',
         slug: 'carrefour',
         description: 'Plataforma de Autonomia de Pedidos e Backoffice',
-        tech: ['Full-Stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
+        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
       },
       {
         name: 'IX',
         slug: 'ix',
         description: 'Plataforma SaaS Interna para Gerenciamento de Trabalhadores Terceirizados em Clínicas',
-        tech: ['Full-Stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Automação de E-mails', 'Dashboard Administrativo', 'RBAC']
+        tech: ['Full-stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Automação de E-mails', 'Dashboard Administrativo', 'RBAC']
       }
     ]
   },
@@ -96,12 +96,12 @@ const pt = {
     title: 'HABILIDADES & TECNOLOGIAS',
     areas: [
       {
-        stack: 'FRONTEND',
+        stack: 'FRONT-END',
         groups: [
           {
             group: 'Arquitetura e Estratégia',
             items: [
-              'Arquitetura Frontend',
+              'Arquitetura Front-end',
               'Design Systems',
               'SSR, SSG, ISR',
               'Gerenciamento de Estado',
@@ -125,7 +125,7 @@ const pt = {
         ],
       },
       {
-        stack: 'BACKEND',
+        stack: 'BACK-END',
         groups: [
           {
             group: 'Arquitetura e Estratégia',

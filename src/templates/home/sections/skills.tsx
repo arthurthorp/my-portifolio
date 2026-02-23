@@ -113,7 +113,7 @@ export const Skills = () => {
         </SlideUp>
 
         <div
-          className="flex flex-col lg:gap-10 xl:gap-12"
+          className="flex flex-col gap-10 xl:gap-12"
           role="list"
           aria-label={t.skills.title}
         >

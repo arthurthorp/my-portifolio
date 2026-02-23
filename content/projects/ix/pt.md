@@ -12,12 +12,12 @@ O sistema possibilita que a clínica **escolha o melhor funcionário para cada a
 
 ## Arquitetura
 
-A arquitetura foi desenhada para **oferecer uma solução completa de backend e frontend**, escalável e segura para uso interno e público.
+A arquitetura foi desenhada para **oferecer uma solução completa de back-end e front-end**, escalável e segura para uso interno e público.
 
 ### Padrão Arquitetural
 
-- Backend em **NestJS** com arquitetura modular e API REST  
-- Frontend em **Next.js**, contemplando área administrativa e interface pública  
+- Back-end em **NestJS** com arquitetura modular e API REST  
+- Front-end em **Next.js**, contemplando área administrativa e interface pública  
 - Banco de dados relacional **PostgreSQL** para persistência de informações  
 - Integração com **Stripe** para pagamentos e faturamento  
 - **Resend** para envio de e-mails transacionais em eventos do sistema (pedido criado, aprovado, em construção, finalizado)  
@@ -25,8 +25,8 @@ A arquitetura foi desenhada para **oferecer uma solução completa de backend e 
 
 ### Tecnologias e Serviços Utilizados
 
-- **NestJS** para backend modular e escalável  
-- **Next.js** para frontend administrativo e público  
+- **NestJS** para back-end modular e escalável  
+- **Next.js** para front-end administrativo e público  
 - **PostgreSQL** como banco de dados principal  
 - **Stripe** para processamento de pagamentos  
 - **Resend** para envio de e-mails transacionais  
@@ -36,7 +36,7 @@ A arquitetura foi desenhada para **oferecer uma solução completa de backend e 
 
 ## Minhas Principais Contribuições
 
-- Construção da aplicação completa **end-to-end**, incluindo backend, frontend, integração com Stripe e Resend  
+- Construção da aplicação completa **end-to-end**, incluindo back-end, front-end, integração com Stripe e Resend  
 - Implementação do fluxo de pagamento e gestão de pedidos dentro da plataforma  
 - Desenvolvimento de funcionalidades de listagem e filtro de trabalhadores por especialidade, valor e disponibilidade  
 - Configuração e disparo de **e-mails transacionais via Resend** para notificações automáticas  

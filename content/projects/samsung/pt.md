@@ -4,15 +4,15 @@
 
 Projeto de **plataforma para gerenciamento de campanha promocional**, permitindo o **resgate de cupons vinculados ao CPF** e a **sincronização de usuários** que compraram ingressos para um grande show no Brasil, com foco em **alta conversão, segurança e integridade dos dados**.
 
-A solução foi desenvolvida para capturar leads, vincular usuários e cupons, e integrar dados entre o **frontend em React** e o **MasterData da VTEX**, garantindo consistência e confiabilidade durante o lançamento do Samsung S24.
+A solução foi desenvolvida para capturar leads, vincular usuários e cupons, e integrar dados entre o **front-end em React** e o **MasterData da VTEX**, garantindo consistência e confiabilidade durante o lançamento do Samsung S24.
 
-**Palavras-chave estratégicas:** campanha promocional, resgate de cupons, sincronização de usuários, frontend React, BFF Node.js, MasterData VTEX, checkout seguro, alta conversão, experiência do usuário, integridade de dados.
+**Palavras-chave estratégicas:** campanha promocional, resgate de cupons, sincronização de usuários, front-end React, BFF Node.js, MasterData VTEX, checkout seguro, alta conversão, experiência do usuário, integridade de dados.
 
 ---
 
 ## Arquitetura
 
-A arquitetura foi desenhada para **integrar frontend e backend de forma eficiente**, com foco em **captura de leads, segurança no checkout e consumo de dados em tempo real**.
+A arquitetura foi desenhada para **integrar front-end e back-end de forma eficiente**, com foco em **captura de leads, segurança no checkout e consumo de dados em tempo real**.
 
 ### Padrão Arquitetural
 
@@ -35,7 +35,7 @@ A arquitetura foi desenhada para **integrar frontend e backend de forma eficient
 
 - Desenvolvimento da **interface de captura de leads** para vinculação de clientes e cupons.
 - Configuração do **checkout** com camadas de segurança adicionais, garantindo integridade dos descontos.
-- Criação do **BFF em Node.js**, otimizando rotas de consumo para o frontend e integração com MasterData.
+- Criação do **BFF em Node.js**, otimizando rotas de consumo para o front-end e integração com MasterData.
 - Garantia de lançamento da campanha **sem atrasos** e aumento da conversão com o S24.
 - Implementação de fluxos de validação e consistência de dados entre sistemas.
 
@@ -46,6 +46,6 @@ A arquitetura foi desenhada para **integrar frontend e backend de forma eficient
 - Lançamento da campanha dentro do prazo, sem atrasos operacionais.
 - Aumento da conversão de vendas do Samsung S24.
 - Experiência de usuário segura e confiável no resgate de cupons.
-- Integração eficiente entre frontend, backend e MasterData VTEX, garantindo consistência de dados.
+- Integração eficiente entre front-end, back-end e MasterData VTEX, garantindo consistência de dados.
 
 > Plataforma de campanha promocional com foco em segurança, integridade de dados e aumento de conversão no lançamento do Samsung S24.

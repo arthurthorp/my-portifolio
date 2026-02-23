@@ -76,19 +76,19 @@ const en = {
         name: 'Samsung',
         slug: 'samsung',
         description: 'Coupon Redemption and User Synchronization Platform',
-        tech: ['Full-Stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
+        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
       },
       {
         name: 'Carrefour',
         slug: 'carrefour',
         description: 'Platform for Order Autonomy and Backoffice Management',
-        tech: ['Full-Stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
+        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
       },
       {
         name: 'IX',
         slug: 'ix',
         description: 'Internal SaaS Platform for Managing External Workers in Clinics',
-        tech: ['Full-Stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Email Automation', 'Admin Dashboard', 'RBAC']
+        tech: ['Full-stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Email Automation', 'Admin Dashboard', 'RBAC']
       }
     ]
   },

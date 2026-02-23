@@ -14,7 +14,7 @@ A solução integra **frontend React**, **BFF** e **microsserviços na GCP**, of
 
 ## Arquitetura
 
-A arquitetura foi desenhada para **integrar frontend, BFF e microsserviços de pedidos**, garantindo clareza e autonomia para o usuário final, além de suporte eficiente para atendentes do SAC.
+A arquitetura foi desenhada para **integrar front-end, BFF e microsserviços de pedidos**, garantindo clareza e autonomia para o usuário final, além de suporte eficiente para atendentes do SAC.
 
 ### Padrão Arquitetural
 
@@ -26,7 +26,7 @@ A arquitetura foi desenhada para **integrar frontend, BFF e microsserviços de p
 ### Tecnologias e Serviços Utilizados
 
 - **React** para construção da nova interface de usuário e página “Minha Conta”  
-- **Node.js (BFF)** para orquestração de chamadas entre frontend e microsserviços  
+- **Node.js (BFF)** para orquestração de chamadas entre front-end e microsserviços  
 - **GCP** para microsserviços de pedidos e processamento de dados  
 - **Microfrontends** no portal backoffice para manutenção e melhorias de desempenho  
 - Validações de fluxos de cancelamento, devolução e troca com base no status do pedido  
