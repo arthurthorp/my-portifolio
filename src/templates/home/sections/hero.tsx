@@ -23,7 +23,7 @@ export const Hero = () => {
             <div className="grid w-full max-w-6xl grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,360px)] lg:gap-16 relative z-10">
                 <div className="flex flex-col items-start">
                     <SlideUp delay={0.1}>
-                        <div className="inline-block bg-accent text-accent-foreground px-4 py-1 font-bold tracking-widest uppercase mb-6 text-sm transform -rotate-2">
+                        <div className="inline-block bg-foreground text-background px-4 py-1 font-bold tracking-widest uppercase mb-6 text-sm transform -rotate-2">
                             {t.hero.based}
                         </div>
                     </SlideUp>
@@ -56,7 +56,7 @@ export const Hero = () => {
                     
                     <SlideUp delay={0.5} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                         <Link href="#contact" passHref>
-                            <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                            <Button variant="secondary" size="lg" className="w-full sm:w-auto">
                                 {t.hero.cta}
                             </Button>
                         </Link>
@@ -75,6 +75,7 @@ export const Hero = () => {
                             alt="Arthur presenting a software engineering lecture on stage"
                             fill
                             priority
+                            fetchPriority='high'
                             quality={100}
                             sizes="(max-width: 768px) 80vw, 360px"
                         />
