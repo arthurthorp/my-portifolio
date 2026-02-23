@@ -4,7 +4,6 @@ import { Experience } from './sections/experience';
 import { Projects } from './sections/projects';
 import { Skills } from './sections/skills';
 import { Contact } from './sections/contact';
-import { Footer } from './sections/footer';
 
 export const Home = () => {
     return (
@@ -15,7 +14,6 @@ export const Home = () => {
             <Projects />
             <Skills />
             <Contact />
-            <Footer />
         </div>
     );
 };

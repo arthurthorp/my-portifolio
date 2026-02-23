@@ -12,7 +12,7 @@ export const Footer = () => {
                     ARTHUR.DEV
                 </div>
                 <div className="font-sans text-xs font-bold uppercase tracking-widest text-background/50 text-center">
-                    {t.footer.copy}
+                    {`© ${new Date().getFullYear()} ${t.footer.copy}.`}
                 </div>
             </div>
         </footer>
