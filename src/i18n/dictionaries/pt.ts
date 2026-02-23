@@ -56,7 +56,7 @@ const pt = {
       {
         role: 'Desenvolvedor Web Estagiário',
         company: 'Friweb',
-        period: '2020 - 2021',
+        period: '2019 - 2020',
         description: 'Participação no desenvolvimento e manutenção de sistemas em PHP, com modelagem de banco de dados MySQL e suporte a projetos legados. Evolução de plataformas web utilizando HTML, CSS e JavaScript, além de configuração de hospedagem e suporte técnico.',
       }
     ]

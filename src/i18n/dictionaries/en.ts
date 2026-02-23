@@ -56,7 +56,7 @@ const en = {
       {
         role: 'Web Developer Intern',
         company: 'Friweb',
-        period: '2020 - 2021',
+        period: '2019 - 2020',
         description: 'Contributed to the development and maintenance of PHP systems, including MySQL database modeling and support for legacy projects. Enhanced web platforms using HTML, CSS, and JavaScript, as well as configuring hosting environments and providing technical support.',
       }
     ]
