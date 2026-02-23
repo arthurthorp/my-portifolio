@@ -12,6 +12,8 @@ const en = {
     role: 'FULL-STACK DEVELOPER',
     based: 'HELLO, I’M ARTHUR',
     summary: 'I build high-impact interfaces and robust systems. Focused on scalable architecture and singular experiences.',
+    cta: 'GET IN TOUCH',
+    viewProject: 'VIEW PROJECTS',
   },
   about: {
     title: 'ABOUT',

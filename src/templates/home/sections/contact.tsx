@@ -58,7 +58,7 @@ export const Contact = () => {
                 <FadeIn delay={0.2} className="flex flex-col gap-5 md:gap-6 mt-2 md:mt-4 items-center lg:items-start">
                     <div className="flex flex-wrap justify-center lg:justify-start gap-5 md:gap-8 mb-3 mt-3 md:mt-4">
                         <a
-                            href="www.linkedin.com/in/arthur-cardoso-dev"
+                            href="https://linkedin.com/in/arthur-cardoso-dev"
                             className="w-fit text-background font-sans text-lg font-bold uppercase tracking-widest relative group transition-colors duration-200 ease-out"
                         >
                             {t.contact.linkedin}

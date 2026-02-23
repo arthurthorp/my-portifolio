@@ -57,12 +57,12 @@ export const Hero = () => {
                     <SlideUp delay={0.5} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                         <Link href="#contact" passHref>
                             <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                                {t.contact.cta}
+                                {t.hero.cta}
                             </Button>
                         </Link>
                         <Link href="#projects" passHref>
                             <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                                {t.projects.viewProject}
+                                {t.hero.viewProject}
                             </Button>
                         </Link>
                     </SlideUp>

@@ -12,6 +12,8 @@ const pt = {
     role: 'FULL-STACK',
     based: 'OLÁ, ME CHAMO ARTHUR',
     summary: 'Construo interfaces de alto impacto e sistemas robustos. Foco em arquitetura escalável e experiências singulares.',
+    cta: 'ENTRAR EM CONTATO',
+    viewProject: 'VER PROJETOS',
   },
   about: {
     title: 'SOBRE',
