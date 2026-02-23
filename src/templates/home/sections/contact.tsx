@@ -56,17 +56,22 @@ export const Contact = () => {
                 </SlideUp>
 
                 <FadeIn delay={0.2} className="flex flex-col gap-5 md:gap-6 mt-2 md:mt-4 items-center lg:items-start">
-                    <a href={`mailto:${t.contact.email}`} className="group inline-flex items-center">
-                        <Typography variant="h3" className="text-black group-hover:text-background lowercase tracking-normal transition-colors duration-200 ease-out break-all">
-                            {t.contact.email}
-                        </Typography>
-                    </a>
-                    <div className="flex flex-wrap justify-center lg:justify-start gap-5 md:gap-8 mt-3 md:mt-4">
-                        <a href="#" className="font-display font-bold text-xl uppercase tracking-widest text-background hover:text-black hover:underline decoration-4 underline-offset-8">
-                            {t.contact.github}
-                        </a>
-                        <a href="#" className="font-display font-bold text-xl uppercase tracking-widest text-background hover:text-black hover:underline decoration-4 underline-offset-8">
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-5 md:gap-8 mb-3 mt-3 md:mt-4">
+                        <a
+                            href="www.linkedin.com/in/arthur-cardoso-dev"
+                            className="w-fit text-background font-sans text-lg font-bold uppercase tracking-widest relative group transition-colors duration-200 ease-out"
+                        >
                             {t.contact.linkedin}
+
+                            <Text className="absolute -bottom-1 left-0 h-0.5 w-0 bg-background transition-[width] duration-300 group-hover:w-full" />
+                        </a>
+                        <a
+                            href="https://github.com/arthurthorp"
+                            className="w-fit text-background font-sans text-lg font-bold uppercase tracking-widest relative group transition-colors duration-200 ease-out"
+                        >
+                            {t.contact.github}
+
+                            <Text className="absolute -bottom-1 left-0 h-0.5 w-0 bg-background transition-[width] duration-300 group-hover:w-full" />
                         </a>
                     </div>
                 </FadeIn>
@@ -156,9 +161,9 @@ export const Contact = () => {
 
                             <Button 
                                 type="submit" 
-                                variant='secondary'
+                                variant='primary'
                                 disabled={isSubmitting}
-                                className="mt-4 w-full h-16 text-xl"
+                                className="mt-4 w-full h-16 text-xl bg-accent text-white hover:text-white hover:bg-black hover:border-transparent"
                             >
                                 {isSubmitting ? t.contact.formSubmitting : t.contact.formSubmit}
                             </Button>

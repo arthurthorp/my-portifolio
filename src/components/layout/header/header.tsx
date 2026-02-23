@@ -68,8 +68,8 @@ export const Header = () => {
                 
                 <div className="flex shrink-0">
                     <Link href={`/${lang}`} className="font-display text-lg font-black uppercase tracking-tight hover:text-accent transition-colors duration-200 ease-out sm:text-xl md:text-2xl">
-                        <Text className="lg:hidden">{'<>'} dev</Text>
-                        <Text className="hidden lg:inline">ARTHUR.DEV</Text>
+                        <Text className="lg:hidden">{'<>'}</Text>
+                        <Text className="hidden lg:inline">ARTHUR</Text>
                     </Link>
                 </div>
 

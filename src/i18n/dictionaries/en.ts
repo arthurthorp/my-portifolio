@@ -76,8 +76,12 @@ const en = {
     }
   },
   footer: {
-    copy: '© 2026 ARTHUR Cardoso. ALL RIGHTS RESERVED.',
-  }
+    copy: 'ARTHUR CARDOSO. ALL RIGHTS RESERVED.',
+  },
+  notFound: {
+    description: 'The page you are looking for does not exist or has been moved. Head back home to keep browsing.',
+    backHome: 'Back to Home',
+  },
 };
 
 export default en;

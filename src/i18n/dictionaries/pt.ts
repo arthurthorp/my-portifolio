@@ -77,7 +77,11 @@ const pt = {
   },
   footer: {
     copy: 'ARTHUR CARDOSO. TODOS OS DIREITOS RESERVADOS.',
-  }
+  },
+  notFound: {
+    description: 'A página que você procura não existe ou foi movida. Volte ao início para continuar navegando.',
+    backHome: 'Voltar ao início',
+  },
 };
 
 export default pt;
