@@ -112,7 +112,6 @@ const en = {
           {
             group: 'Architecture & Strategy',
             items: [
-              'API Architecture',
               'Event-Driven Architecture',
               'Clean Architecture & SOLID',
               'RESTful API Development',
@@ -130,7 +129,6 @@ const en = {
             items: [
               'Database Modeling & Structure',
               'Query Optimization',
-              'Form Validation & Schema Modeling',
               'Data Validation & Modeling',
               'API Integration (REST & GraphQL)',
               'Messaging & Asynchronous Processing',
@@ -143,7 +141,7 @@ const en = {
             items: [
               'Authentication & Authorization (JWT, RBAC)',
               'Error Handling & Response Standardization',
-              'Version Control & Git Best Practices',
+              'Version Control & Best Practices',
             ],
           },
           {

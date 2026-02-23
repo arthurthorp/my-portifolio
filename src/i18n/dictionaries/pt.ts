@@ -112,7 +112,6 @@ const pt = {
           {
             group: 'Arquitetura e Estratégia',
             items: [
-              'Arquitetura de APIs',
               'Arquitetura Orientada a Eventos',
               'Clean Architecture & SOLID',
               'Desenvolvimento de APIs RESTful',
@@ -122,7 +121,7 @@ const pt = {
             group: 'Performance e Qualidade',
             items: [
               'Escalabilidade e Performance',
-              'Testes de Backend (Unitários e Integração)',
+              'Testes (Unitários e de Integração)',
             ],
           },
           {
@@ -130,7 +129,6 @@ const pt = {
             items: [
               'Modelagem e Estruturação de Banco de Dados',
               'Otimização de Consultas',
-              'Validação de Formulários e Modelagem de Schemas',
               'Validação e Modelagem de Dados',
               'Integração com APIs (REST & GraphQL)',
               'Mensageria e Processamento Assíncrono',
@@ -143,7 +141,7 @@ const pt = {
             items: [
               'Autenticação e Autorização (JWT, RBAC)',
               'Tratamento de Erros e Padronização de Respostas',
-              'Versionamento e Boas Práticas com Git',
+              'Versionamento e Boas Práticas',
             ],
           },
           {
