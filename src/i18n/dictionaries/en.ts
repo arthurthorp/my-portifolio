@@ -3,7 +3,7 @@ const en = {
     about: 'ABOUT',
     experience: 'EXPERIENCE',
     projects: 'PROJECTS',
-    skills: 'STACK',
+    skills: 'SKILLS',
     contact: 'CONTACT',
     lang: 'PT',
   },

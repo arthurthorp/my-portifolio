@@ -3,7 +3,7 @@ const pt = {
     about: 'SOBRE',
     experience: 'EXPERIÊNCIA',
     projects: 'PROJETOS',
-    skills: 'TECNOLOGIAS',
+    skills: 'HABILIDADES',
     contact: 'CONTATO',
     lang: 'EN',
   },
