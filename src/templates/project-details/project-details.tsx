@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { MarkdownContent } from "@/components/ui/markdown-content";
-import { Typography } from "@/components/ui/typography";
 import type { Lang } from "@/lib/projects";
+import { Navigation } from "./sections/navigation";
+import { ProjectInfo } from "./sections/project-info";
 
 type Props = {
   project: {
@@ -22,35 +22,9 @@ export default function ProjectDetails({
 }: Props) {
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 md:px-8">
-      <nav className="mb-8" aria-label="Breadcrumb">
-        <Link
-          href={`/${lang}#projects`}
-          className="inline-flex items-center text-sm font-medium text-accent hover:text-accent/80 transition-colors uppercase tracking-widest"
-        >
-          ← {backLabel}
-        </Link>
-      </nav>
+      <Navigation lang={lang} backLabel={backLabel} />
 
-      <section className="mb-10 md:mb-14">
-        <Typography variant="h1" as="h1">
-          {project.name}
-        </Typography>
-
-        <Typography variant="body" className="mt-4 text-muted-foreground">
-          {project.description}
-        </Typography>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {project.tech.map((tech) => (
-            <span
-              key={tech}
-              className="rounded border border-border bg-muted/50 px-2 py-1 text-xs font-medium uppercase tracking-wide"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-      </section>
+      <ProjectInfo name={project.name} description={project.description} tech={project.tech} />
 
       <MarkdownContent content={content} />
     </div>

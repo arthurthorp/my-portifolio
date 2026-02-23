@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useTranslation } from '@/i18n/context';
 import { Section } from '@/components/ui/section';
 import { Typography } from '@/components/ui/typography';
-import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
 import { SlideUp, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 
@@ -52,7 +51,7 @@ export const Projects = () => {
                             </div>
 
                             <Link
-                                href={`/${lang}/projects/${(project as { slug?: string }).slug ?? project.name.toLowerCase().replace(/\s+/g, '-')}`}
+                                href={`/${lang}/projects/${project.slug}`}
                                 className="w-fit font-sans text-sm font-bold uppercase tracking-widest text-accent relative group transition-colors duration-200 ease-out"
                             >
                                 {t.projects.viewProject}
