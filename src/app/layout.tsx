@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'Arthur Cardoso | Full Stack Developer',
   description:
-    'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
+    'Portfolio of Arthur Cardoso, a Full Stack developer focused on scalable architecture and high-quality digital products.',
   icons: {
     icon: '/icon.svg',
   },
   openGraph: {
     title: 'Arthur Cardoso | Full Stack Developer',
     description:
-      'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
+      'Portfolio of Arthur Cardoso, a Full Stack developer focused on scalable architecture and high-quality digital products.',
     type: 'website',
     url: '/',
   },

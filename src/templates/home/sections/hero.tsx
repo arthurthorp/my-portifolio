@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export const Hero = () => {
     const { t } = useTranslation();
-    const roleParts = t.hero.role.split(/(FULL-STACK)/i);
+    const roleParts = t.hero.role.split(/(Full Stack)/i);
 
     return (
         <Section className="min-h-[calc(100svh-4rem)] md:min-h-[calc(100svh-5rem)] flex items-center justify-center pt-20 md:pt-28 pb-12 md:pb-16 relative overflow-hidden">
@@ -32,7 +32,7 @@ export const Hero = () => {
                         <Typography variant="h1" className="mb-4">
                             {t.hero.greeting} <br />
                             {roleParts.map((part, index) =>
-                                /full-stack/i.test(part) ? (
+                                /Full Stack/i.test(part) ? (
                                     <Text
                                         key={`${part}-${index}`}
                                         className="mb-3 inline-block text-accent underline decoration-8 underline-offset-8 py-0.5 shadow-sm"

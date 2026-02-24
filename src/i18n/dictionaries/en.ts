@@ -9,7 +9,7 @@ const en = {
   },
   hero: {
     greeting: 'I’M A',
-    role: 'FULL-STACK DEVELOPER',
+    role: 'Full Stack DEVELOPER',
     based: 'HELLO, I’M ARTHUR',
     summary: 'I build high-impact interfaces and robust systems. Focused on scalable architecture and unique experiences.',
     cta: 'GET IN TOUCH',
@@ -17,26 +17,26 @@ const en = {
   },
   about: {
     title: 'ABOUT',
-    description1: 'I’m a full-stack developer who enjoys turning complex challenges into clear, efficient, and well-structured solutions. I combine a strong technical foundation with careful attention to design and user experience, always aiming to deliver products that not only work well but truly make sense for the people who use them.',
+    description1: 'I’m a Full Stack developer who enjoys turning complex challenges into clear, efficient, and well-structured solutions. I combine a strong technical foundation with careful attention to design and user experience, always aiming to deliver products that not only work well but truly make sense for the people who use them.',
     description2: 'I work across the entire stack, from optimizing database queries to crafting fluid frontend animations, always ensuring performance and accessibility.',
   },
   experience: {
     title: 'EXPERIENCE',
     items: [
       {
-        role: 'Mid-Level Full-Stack Developer III',
+        role: 'Mid-Level Full Stack Developer III',
         company: 'Quality Digital',
         period: '2025 - Present',
-        description: 'Full-stack development on large-scale projects, focusing on performance, automation, and scalability. Responsible for automating product registration and updates across multiple environments for Decathlon, reducing manual processes and increasing operational efficiency. Development of services and integrations using Node.js, DynamoDB, and event-driven architecture, ensuring reliability and robust asynchronous processing.',
+        description: 'Full Stack development on large-scale projects, focusing on performance, automation, and scalability. Responsible for automating product registration and updates across multiple environments for Decathlon, reducing manual processes and increasing operational efficiency. Development of services and integrations using Node.js, DynamoDB, and event-driven architecture, ensuring reliability and robust asynchronous processing.',
       },
       {
-        role: 'Mid-Level Full-Stack Developer III',
+        role: 'Mid-Level Full Stack Developer III',
         company: 'Adtail',
         period: '2024 - 2025',
         description: 'Development and evolution of e-commerce platforms using VTEX IO, CMS, and FastStore, building custom components, Admin apps, and backend integrations with Node.js. Worked on store architecture, MasterData configuration, checkout implementation, and cloud services. Actively participated in client meetings for scope definition and technical support, working in an agile environment with SCRUM and Git Flow.',
       },
       {
-        role: 'Mid-Level Full-Stack Developer II',
+        role: 'Mid-Level Full Stack Developer II',
         company: 'Cadastra',
         period: '2022 - 2024',
         description: 'Implementation and evolution of large-scale e-commerce platforms using VTEX IO, CMS, and FastStore, contributing to major projects such as Carrefour, Samsung, and Perfect Draft (Ambev). Developed custom components, integrated backend services with Node.js, and configured MasterData. Strong focus on performance, user experience, and scalable front-end architecture within agile squads.',
@@ -76,19 +76,19 @@ const en = {
         name: 'Samsung',
         slug: 'samsung',
         description: 'Coupon Redemption and User Synchronization Platform',
-        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Security', 'API']
+        tech: ['Full Stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Security', 'API']
       },
       {
         name: 'Carrefour',
         slug: 'carrefour',
         description: 'Platform for Order Autonomy and Backoffice Management',
-        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
+        tech: ['Full Stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
       },
       {
         name: 'IX',
         slug: 'ix',
         description: 'Internal SaaS Platform for Managing External Workers in Clinics',
-        tech: ['Full-stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Email Automation', 'Admin Dashboard', 'RBAC']
+        tech: ['Full Stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Email Automation', 'Admin Dashboard', 'RBAC']
       }
     ]
   },

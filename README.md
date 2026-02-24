@@ -1,6 +1,6 @@
 # Arthur Cardoso — Portfolio
 
-A modern, full-stack portfolio built with **Next.js 16**, **React 19**, and **TypeScript**. It showcases projects and skills, supports Portuguese and English, and includes a contact form with email delivery and optional database persistence.
+A modern, Full Stack portfolio built with **Next.js 16**, **React 19**, and **TypeScript**. It showcases projects and skills, supports Portuguese and English, and includes a contact form with email delivery and optional database persistence.
 
 ---
 
@@ -236,6 +236,6 @@ This project is private and not licensed for reuse unless otherwise stated.
 
 ## Author
 
-**Arthur Cardoso** — Full-Stack Developer  
+**Arthur Cardoso** — Full Stack Developer  
 
 Portfolio and contact: [live site](#live-demo).

@@ -9,7 +9,7 @@ const pt = {
   },
   hero: {
     greeting: 'SOU DEV',
-    role: 'FULL-STACK',
+    role: 'Full Stack',
     based: 'OLÁ, ME CHAMO ARTHUR',
     summary: 'Construo interfaces de alto impacto e sistemas robustos. Foco em arquitetura escalável e experiências únicas.',
     cta: 'ENTRAR EM CONTATO',
@@ -17,26 +17,26 @@ const pt = {
   },
   about: {
     title: 'SOBRE',
-    description1: 'Sou desenvolvedor full-stack e gosto de transformar desafios complexos em soluções claras, eficientes e bem estruturadas. Uno uma base técnica sólida a uma atenção cuidadosa ao design e à experiência do usuário, buscando sempre entregar produtos que funcionem bem e façam sentido para quem os utiliza.',
+    description1: 'Sou desenvolvedor Full Stack e gosto de transformar desafios complexos em soluções claras, eficientes e bem estruturadas. Uno uma base técnica sólida a uma atenção cuidadosa ao design e à experiência do usuário, buscando sempre entregar produtos que funcionem bem e façam sentido para quem os utiliza.',
     description2: 'Trabalho em toda a stack, desde a otimização de consultas de banco de dados até a criação de animações fluidas no front-end, sempre garantindo performance e acessibilidade.',
   },
   experience: {
     title: 'EXPERIÊNCIA',
     items: [
       {
-        role: 'Desenvolvedor Full-Stack Pleno III',
+        role: 'Desenvolvedor Full Stack Pleno III',
         company: 'Quality Digital',
         period: '2025 - Presente',
-        description: 'Atuação full-stack em projetos de grande escala, com foco em performance, automação e escalabilidade. Responsável pela automatização do cadastro e atualização de produtos em múltiplos ambientes para a Decathlon, reduzindo processos manuais e aumentando a eficiência operacional. Desenvolvimento de serviços e integrações utilizando Node.js, DynamoDB e arquitetura orientada a eventos, garantindo confiabilidade e processamento assíncrono robusto.',
+        description: 'Atuação Full Stack em projetos de grande escala, com foco em performance, automação e escalabilidade. Responsável pela automatização do cadastro e atualização de produtos em múltiplos ambientes para a Decathlon, reduzindo processos manuais e aumentando a eficiência operacional. Desenvolvimento de serviços e integrações utilizando Node.js, DynamoDB e arquitetura orientada a eventos, garantindo confiabilidade e processamento assíncrono robusto.',
       },
       {
-        role: 'Desenvolvedor Full-Stack Pleno III',
+        role: 'Desenvolvedor Full Stack Pleno III',
         company: 'Adtail',
         period: '2024 - 2025',
         description: 'Desenvolvimento e evolução de e-commerces em VTEX IO, CMS e FastStore, criando componentes customizados, apps para o Admin e integrações back-end em Node.js. Atuação em arquitetura de lojas, configuração de MasterData, implantação de checkout e serviços em Cloud. Participação ativa em reuniões com clientes para definição de escopo e suporte técnico, trabalhando em ambiente ágil com SCRUM e Git Flow.',
       },
       {
-        role: 'Desenvolvedor Full-Stack Pleno II',
+        role: 'Desenvolvedor Full Stack Pleno II',
         company: 'Cadastra',
         period: '2022 - 2024',
         description: 'Implementação e evolução de grandes e-commerces utilizando VTEX IO, CMS e FastStore, atuando em projetos relevantes como Carrefour, Samsung e Perfect Draft (Ambev). Desenvolvimento de componentes customizados, integração com serviços back-end em Node.js e configuração de MasterData. Forte atuação em performance, experiência do usuário e arquitetura front-end escalável dentro de squads ágeis.',
@@ -76,19 +76,19 @@ const pt = {
         name: 'Samsung',
         slug: 'samsung',
         description: 'Plataforma de Resgate de Cupons e Sincronização de Usuários',
-        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
+        tech: ['Full Stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
       },
       {
         name: 'Carrefour',
         slug: 'carrefour',
         description: 'Plataforma de Autonomia de Pedidos e Backoffice',
-        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
+        tech: ['Full Stack', 'React', 'Node.js', 'BFF', 'GCP', 'Microservices', 'Microfrontends']
       },
       {
         name: 'IX',
         slug: 'ix',
         description: 'Plataforma SaaS Interna para Gerenciamento de Trabalhadores Terceirizados em Clínicas',
-        tech: ['Full-stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Automação de E-mails', 'Dashboard Administrativo', 'RBAC']
+        tech: ['Full Stack', 'Next.js', 'NestJS', 'PostgreSQL', 'Stripe', 'Resend', 'SaaS', 'Automação de E-mails', 'Dashboard Administrativo', 'RBAC']
       }
     ]
   },

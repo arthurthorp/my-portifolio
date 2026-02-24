@@ -11,14 +11,14 @@ type LangLayoutProps = {
 
 const metadataByLang: Record<Lang, { title: string; description: string }> = {
   pt: {
-    title: 'Arthur Cardoso | Desenvolvedor Full-Stack',
+    title: 'Arthur Cardoso | Desenvolvedor Full Stack',
     description:
-      'Portfólio de Arthur Cardoso, desenvolvedor full-stack focado em arquitetura escalável e produtos digitais de alta qualidade.',
+      'Portfólio de Arthur Cardoso, desenvolvedor Full Stack focado em arquitetura escalável e produtos digitais de alta qualidade.',
   },
   en: {
-    title: 'Arthur Cardoso | Full-Stack Developer',
+    title: 'Arthur Cardoso | Full Stack Developer',
     description:
-      'Portfolio of Arthur Cardoso, a full-stack developer focused on scalable architecture and high-quality digital products.',
+      'Portfolio of Arthur Cardoso, a Full Stack developer focused on scalable architecture and high-quality digital products.',
   },
 };
 
