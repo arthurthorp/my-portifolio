@@ -76,7 +76,7 @@ const en = {
         name: 'Samsung',
         slug: 'samsung',
         description: 'Coupon Redemption and User Synchronization Platform',
-        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Segurança', 'API']
+        tech: ['Full-stack', 'React', 'Node.js', 'BFF', 'VTEX MasterData', 'Security', 'API']
       },
       {
         name: 'Carrefour',
