@@ -31,7 +31,7 @@ const pt = {
       },
       {
         role: 'Desenvolvedor Full Stack Pleno III',
-        company: 'Adtail',
+        company: 'Adtail (Grupo Cadastra)',
         period: '2024 - 2025',
         description: 'Desenvolvimento e evolução de e-commerces em VTEX IO, CMS e FastStore, criando componentes customizados, apps para o Admin e integrações back-end em Node.js. Atuação em arquitetura de lojas, configuração de MasterData, implantação de checkout e serviços em Cloud. Participação ativa em reuniões com clientes para definição de escopo e suporte técnico, trabalhando em ambiente ágil com SCRUM e Git Flow.',
       },
@@ -43,7 +43,7 @@ const pt = {
       },
       {
         role: 'Desenvolvedor Web Júnior',
-        company: 'M3',
+        company: 'M3 (Grupo Cadastra)',
         period: '2021 - 2022',
         description: 'Atuação na implementação e evolução de lojas VTEX IO e CMS, incluindo configuração de MasterData e implantação de checkout. Participação em deploys, versionamento com Git Flow e trabalho em metodologia ágil. Evolução técnica sólida em front-end moderno e estruturação de e-commerces.',
       },

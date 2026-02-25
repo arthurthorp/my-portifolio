@@ -31,7 +31,7 @@ const en = {
       },
       {
         role: 'Mid-Level Full Stack Developer III',
-        company: 'Adtail',
+        company: 'Adtail (Cadastra Group)',
         period: '2024 - 2025',
         description: 'Development and evolution of e-commerce platforms using VTEX IO, CMS, and FastStore, building custom components, Admin apps, and backend integrations with Node.js. Worked on store architecture, MasterData configuration, checkout implementation, and cloud services. Actively participated in client meetings for scope definition and technical support, working in an agile environment with SCRUM and Git Flow.',
       },
@@ -43,7 +43,7 @@ const en = {
       },
       {
         role: 'Junior Web Developer',
-        company: 'M3',
+        company: 'M3 (Cadastra Group)',
         period: '2021 - 2022',
         description: 'Worked on the implementation and evolution of VTEX IO and CMS stores, including MasterData configuration and checkout deployment. Participated in deployments, version control using Git Flow, and agile methodologies. Built a solid technical foundation in modern front-end development and e-commerce architecture.',
       },
