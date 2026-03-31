@@ -11,13 +11,6 @@ export async function submitContactForm(data: ContactFormData) {
   try {
     const validatedData = contactSchema.parse(data);
 
-
-    await db.insert(contacts).values({
-      name: validatedData.name,
-      email: validatedData.email,
-      message: validatedData.message,
-    });
-
     const personalEmail = process.env.CONTACT_EMAIL!;
 
     const fromEmail = process.env.RESEND_FROM_EMAIL!;
@@ -38,9 +31,18 @@ Date: ${new Date().toLocaleString()}
 `,
     });
 
+    await db.insert(contacts).values({
+      name: validatedData.name,
+      email: validatedData.email,
+      message: validatedData.message,
+    });
+
     return { success: true };
   } catch (error) {
     console.error("Failed to submit contact form:", error);
-    return { success: false, error: "Form submission failed. Please try again later." };
+    return {
+      success: false,
+      error: "Form submission failed. Please try again later.",
+    };
   }
 }
